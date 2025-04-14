@@ -1,0 +1,9 @@
+<FlexLayout Direction="Column" AlignItems="Start"
+JustifyContent="Center" Padding="20">
+    <Entry Placeholder="Nombre" WidthRequest="250" />
+    <Entry Placeholder="Teléfono" WidthRequest="250" />
+    <Entry Placeholder="Correo" WidthRequest="250" />
+    <Entry Placeholder="Dirección" WidthRequest="250" />
+
+    <Button Text="Guardar Contacto" WidthRequest="250" />
+</FlexLayout>

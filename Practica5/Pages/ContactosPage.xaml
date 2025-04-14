@@ -1,0 +1,17 @@
+<VerticalStackLayout Padding="10">
+    <Label Text="Mis Contactos" FontSize="Large" />
+    <CollectionView ItemsSource="{Binding Contactos}">
+        <CollectionView.ItemTemplate>
+            <DataTemplate>
+                <Frame Margin="5" Padding="10">
+
+                    <StackLayout>
+                        <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                        <Label Text="{Binding Telefono}" />
+                        <Label Text="{Binding Correo}" />
+                    </StackLayout>
+                </Frame>
+            </DataTemplate>
+        </CollectionView.ItemTemplate>
+    </CollectionView>
+</VerticalStackLayout>
