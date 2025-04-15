@@ -9,17 +9,17 @@ public partial class MainPage : ContentPage
 
     private async void IrListaContactos(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//ContactosPage");
+        await Navigation.PushAsync(new ContactosPage());
     }
 
     private async void IrCrearContacto(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//CrearContactoPage");
+        await Navigation.PushAsync(new CrearContactoPage());
     }
 
     private async void IrConfiguracion(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync("//ConfiguracionPage");
+        await Navigation.PushAsync(new ConfiguracionPage());
     }
 }
 

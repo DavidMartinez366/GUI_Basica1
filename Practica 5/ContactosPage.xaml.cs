@@ -25,9 +25,9 @@ public class ContactosViewModel
     {
         Contactos = new List<Contacto>
         {
-            new Contacto { Nombre = "Juan Pérez", Telefono = "555-1234", Correo = "juan@example.com" },
-            new Contacto { Nombre = "María García", Telefono = "555-5678", Correo = "maria@example.com" },
-            new Contacto { Nombre = "Carlos López", Telefono = "555-9012", Correo = "carlos@example.com" }
+            new Contacto { Nombre = "Juan ", Telefono = "123456", Correo = "juan@gmail.com" },
+            new Contacto { Nombre = "María ", Telefono = "123456", Correo = "maria@gmail.com" },
+            new Contacto { Nombre = "Carlos ", Telefono = "123456", Correo = "carlos@gmail.com" }
         };
     }
 }
