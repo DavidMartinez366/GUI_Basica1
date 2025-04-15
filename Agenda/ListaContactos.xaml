@@ -1,31 +1,28 @@
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<?xml version="1.0" encoding="utf-8" ?>
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Agenda.CrearContacto"
-             Title="CrearContacto">
+             x:Class="Agenda.ListaContactos"
+             Title="ListaContactos">
 
-    <VerticalStackLayout>
-        <VerticalStackLayout Padding="10">
-            <Label Text="Mis Contactos" FontSize="Large" />
-            <CollectionView ItemsSource="{Binding Contactos}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                        <Border Stroke="Gray"
-                                StrokeThickness="1"
-                                StrokeShape="RoundRectangle 10"
-                                Margin="5"
-                                Padding="10"
-                                Background="White">
-
-                            <StackLayout>
-                                <Label Text="{Binding Nombre}" FontAttributes="Bold" />
-                                <Label Text="{Binding Telefono}" />
-                                <Label Text="{Binding Correo}" />
-                            </StackLayout>
-
-                        </Border>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView>
-        </VerticalStackLayout>
+    <VerticalStackLayout Padding="10">
+        <Label Text="Mis Contactos" FontSize="Large" />
+        <CollectionView ItemsSource="{Binding Contactos}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Border Stroke="Gray"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 10"
+                            Margin="5"
+                            Padding="10"
+                            Background="White">
+                        <StackLayout>
+                            <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                            <Label Text="{Binding Telefono}" />
+                            <Label Text="{Binding Correo}" />
+                        </StackLayout>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
     </VerticalStackLayout>
 </ContentPage>
