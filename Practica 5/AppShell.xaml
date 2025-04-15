@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Practica_5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Practica_5"
+    Shell.FlyoutBehavior="Flyout">
+
+    <ShellContent
+        Title="Inicio"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+    <ShellContent
+        Title="Contactos"
+        ContentTemplate="{DataTemplate local:ContactosPage}"
+        Route="ContactosPage" />
+
+    <ShellContent
+        Title="Nuevo Contacto"
+        ContentTemplate="{DataTemplate local:CrearContactoPage}"
+        Route="CrearContactoPage" />
+
+    <ShellContent
+        Title="Configuración"
+        ContentTemplate="{DataTemplate local:ConfiguracionPage}"
+        Route="ConfiguracionPage" />
+</Shell>
