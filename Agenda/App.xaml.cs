@@ -7,7 +7,12 @@ namespace Agenda
     {
         public App()
         {
-            MainPage = new NavigationPage(new MainPage());
+            InitializeComponent();
+        }
+
+        protected override Window CreateWindow(IActivationState? activationState) 
+        {
+            return new Window(new NavigationPage(new MainPage()));
         }
     }
 }

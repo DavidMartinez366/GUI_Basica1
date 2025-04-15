@@ -34,5 +34,17 @@ namespace Agenda
                 await DisplayAlert("Error", ex.Message, "OK");
             }
         }
+        private async void CrearContacto (object sender, EventArgs e)
+        {
+            try
+            {
+                await Navigation.PushAsync(new CrearContacto());
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Error al navegar a CrearContacto: {ex.Message}");
+                await DisplayAlert("Error", ex.Message, "OK");
+            }
+        }
     }
 }
