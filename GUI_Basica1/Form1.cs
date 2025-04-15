@@ -18,10 +18,7 @@ namespace GUI_Basica1
         private TextBox txtBusqueda;
         private Label lblBusqueda;
         private List<Button> dynamicButtons = new List<Button>();
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void Form1_Load(object sender, EventArgs e)
         {

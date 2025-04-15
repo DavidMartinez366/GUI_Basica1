@@ -1,5 +1,0 @@
-<StackLayout Padding="20">
-    <Button Text="Lista de Contactos" Clicked="IrListaContactos" />
-    <Button Text="Crear Nuevo Contacto" Clicked="IrCrearContacto" />
-    <Button Text="Configuración" Clicked="IrConfiguracion" />
-</StackLayout>

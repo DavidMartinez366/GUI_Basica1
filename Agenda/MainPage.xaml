@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Agenda.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+
+            <StackLayout Padding="20" Spacing="15">
+                <Button
+                   Text="Lista de Contactos"
+                    Clicked="ListaContactos"
+                   BorderColor="Black"
+                   BackgroundColor="Blue" />
+
+                <Button 
+                    Text="Crear Nuevo Contacto"
+                    BorderColor="Black"
+                    BackgroundColor="Green" />
+
+                <Button 
+                    Text="Configuración"
+                    BorderColor="Black"
+                    BackgroundColor="Gray" />
+            </StackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
